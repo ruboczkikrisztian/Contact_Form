@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Express Sandbox</title>
+</head>
+
+<body>
+    <div class="login">
+        <div class="login-triangle"></div>
+
+        <h2 class="login-header">Contact Form</h2>
+        <form class="login-container" id="my-form">
+            <label>Name:</label>
+            <input id="name" type="text" name="name" required><br><br>
+
+            <label>Age:</label>
+            <input id="age" type="number" name="age" required><br><br>
+
+            <label>Phone Number:</label>
+            <input id="phoneNumber" type="text" name="phoneNumber" required><br><br>
+
+            <input onclick="snackbar()" type="submit" value="Submit">
+            <div id="snackbar">Data Added</div>
+
+        </form>
+    </div>
+
+
+    <div class="data">
+        <div class="data-container">
+            <button id="getDataButton">Get Data</button>
+            <button id="clearDataButton">Clear Data</button>
+        </div>
+    </div>
+    <div id="root"></div>
+
+
+    <ul id="dataList"></ul>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
